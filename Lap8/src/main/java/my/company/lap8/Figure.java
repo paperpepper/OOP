@@ -26,7 +26,7 @@ public class Figure {
         int column = 8 - Character.getNumericValue(targetPosition.charAt(1)) ;
         if((row < 0 || row >= 8) || (column < 0||column >=8)){
             System.out.println("Position is out of bounds");
-            return;
+            
         }
         else if((board.brd[column][row] != null && board.brd[column][row].isWhite == this.isWhite))       
             System.out.printf("The distination is being occupied by the same-side figure \"%s\", Command abort!!!\n\n", board.brd[column][row].name);

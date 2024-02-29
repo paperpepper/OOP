@@ -13,9 +13,9 @@ public class Lap8 {
     public static void main(String[] args) {
         Board brd= new Board();
         brd.boardInitiate();
-        brd.freeMove("W1", "b2");
+        brd.freeMove("W1", "b9");
         brd.freeMove("BW1", "d2");
-        brd.freeMove("B2", "g2");
+        brd.freeMove("BB1", "g2");
         brd.freeMove("BW1", "e2");
         brd.freeMove("BW1", "h6");
         brd.freeMove("BW1", "g6");

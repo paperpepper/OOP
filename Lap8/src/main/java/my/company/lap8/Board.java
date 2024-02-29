@@ -13,8 +13,8 @@ public class Board {
     void boardInitiate(){
         brd [7][0] = new Figure("W1",true,"a1");
         brd [7][1] = new Figure("B1",false,"h8"); 
-        brd [7][2] = new Bishop("BW1",false, "c1");
-        brd [7][7] = new Bishop("B2",false,"h1");
+        brd [7][2] = new Bishop("BW1",true, "c1");
+        brd [7][7] = new Bishop("BB1",false,"h1");
     }
     public void display() {
     System.out.println("        a           b            c            d           e            f            g            h");
@@ -28,10 +28,10 @@ public class Board {
                 String pieceName = brd[i][j].name;
                 
                 if(pieceName.length()<3){
-                    System.out.print(String.format("  %3s      ", pieceName));
+                    System.out.print(String.format("%3s      ", pieceName));
                     }
                 else{
-                    System.out.print(pieceName+"     ");
+                    System.out.print(pieceName+"      ");
                 }
             }
         }
