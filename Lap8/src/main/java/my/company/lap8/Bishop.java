@@ -23,12 +23,9 @@ public class Bishop extends Figure {
         }
         else if((board.brd[column][row] != null && board.brd[column][row].isWhite == this.isWhite))       
             System.out.printf("The distination is being occupied by the same-side figure \"%s\", Command abort!!!\n\n", board.brd[column][row].name);
-            
-            
+        
         int deltaX = row - this.positionX;
         int deltaY = column - this.positionY;
-
-        
         if (Math.abs(deltaX) == Math.abs(deltaY)) {
             board.brd[positionY][positionX] = null;
             board.brd[column][row] = this;
@@ -42,5 +39,6 @@ public class Bishop extends Figure {
             return;
         }
     }
+    
 }
 

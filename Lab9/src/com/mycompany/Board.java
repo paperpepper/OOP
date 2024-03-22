@@ -2,19 +2,18 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package my.company.lap8;
+package com.mycompany;
 
 /**
  *
- * @author TTK
+ * @author paperpepper
  */
 public class Board {
     Figure brd [][] = new Figure[8][8];
     void boardInitiate(){
         brd [7][0] = new Figure("W1",true,"a1");
         brd [7][1] = new Figure("B1",false,"h8"); 
-        brd [7][2] = new Bishop("BW1",true, "c1");
-        brd [7][7] = new Bishop("BB1",false,"h1");
+    
     }
     public void display() {
     System.out.println("        a           b            c            d           e            f            g            h");
@@ -60,4 +59,3 @@ public class Board {
         display();
     }
 }
-
