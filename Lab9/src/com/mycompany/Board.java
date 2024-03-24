@@ -12,8 +12,14 @@ public class Board {
     Figure brd [][] = new Figure[8][8];
     void boardInitiate(){
         brd [7][0] = new Figure("W1",true,"a1");
-        brd [7][1] = new Figure("B1",false,"h8"); 
-    
+        brd [7][1] = new Figure("B1",false,"b2"); 
+        brd [7][1] = new Pawn("BP1",false,"b1");
+        brd [0][1] = new Pawn("WP1",true,"b8");
+        brd [3][1] = new Pawn("WP2",true,"b5");
+        brd [3][2] = new Figure("B2",false,"c5"); 
+        brd [4][3] = new Pawn("BP2",false,"d4"); 
+        brd [4][0] = new Pawn("WP3",true,"a4"); 
+        
     }
     public void display() {
     System.out.println("        a           b            c            d           e            f            g            h");

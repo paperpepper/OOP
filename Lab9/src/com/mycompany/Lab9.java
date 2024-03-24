@@ -16,16 +16,25 @@ public class Lab9 {
     public static void main(String[] args) {
         Board brd= new Board();
         brd.boardInitiate();
-        brd.freeMove("W1", "b9");
-        brd.freeMove("BW1", "d2");
-        brd.freeMove("BB1", "g2");
-        brd.freeMove("BW1", "e2");
-        brd.freeMove("BW1", "h6");
-        brd.freeMove("BW1", "g6");
-        brd.freeMove("BW1", "g5");
+        brd.freeMove("W1", "b9"); 
         brd.freeMove("B1","g2");
         brd.freeMove("W1", "g2");
-        
+        brd.freeMove("WP1","b2");
+        brd.freeMove("WP1","b6");
+        brd.freeMove("WP1","c5");
+        brd.freeMove("B2", "h8");
+        brd.freeMove("BP1","b3");
+        brd.freeMove("BP1","b4");
+        brd.freeMove("BP1","b5");
+        brd.freeMove("BP1","a5");
+        brd.freeMove("BP1","c5");
+        brd.freeMove("BP1","c4");
+        brd.freeMove("BP1","c9");
+        brd.freeMove("BP1","z6");
+        brd.freeMove("BP1","d4");
+        brd.freeMove("BP1","c6");
+        brd.freeMove("WP2","c6");
+        brd.freeMove("WP2","a4");
     }
     
 }

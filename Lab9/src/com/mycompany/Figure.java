@@ -35,8 +35,7 @@ public class Figure {
             board.brd[column][row] = this;
             this.positionX = row;
             this.positionY = column;
+            
         }
     }
-
-    
 }
